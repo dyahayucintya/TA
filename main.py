@@ -21,9 +21,9 @@ messages = readfile('SMSSpamCollection.txt')
 print(messages)
 print(casefolding(messages))
 
-# training_files = glob.glob('SMSSpamCollection.txt')
-# for file_name in training_files:
-#     text = open(file_name, encoding="UTF-8").read()
-#     filename.append(file_name.split("\\")[1])
-#     tokens = regexp_tokenize(text, r'[A-Za-z]{3,}')
-#     data.append(tokens)
+training_files = glob.glob('SMSSpamCollection.txt')
+for file_name in training_files:
+    text = open(file_name, encoding="UTF-8").read()
+    filename.append(file_name.split("\\")[1])
+    tokens = regexp_tokenize(text, r'[A-Za-z]{3,}')
+    data.append(tokens)
